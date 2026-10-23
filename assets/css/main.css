@@ -1,16 +1,23 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /* Variables de identidad visual */
 
 	:root {
-		--color-primario: #212931;
-		--color-acento: #18bfef;
-		--color-fondo: #1e252d;
+		--color-primario: #2b2d6e;
+		--color-secundario: #f2b705;
+		--color-acento: #d6246e;
+		--color-fondo: #1c1a33;
 		--color-superficie: #ffffff;
-		--color-texto: #212931;
-		--color-texto-suave: #717981;
+		--color-texto: #2a2438;
+		--color-texto-suave: #6b6475;
 		--color-borde: #eeeeee;
+		--color-fondo-claro: #f6f3f8;
+		--fuente-texto: Arial, Helvetica, sans-serif;
+		--fuente-titulos: "Arial Black", Arial, Helvetica, sans-serif;
+		--radio: 10px;
+		--espacio-pequeno: 8px;
+		--espacio-medio: 16px;
+		--espacio-grande: 32px;
 	}
 
 /*
@@ -160,10 +167,10 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
-		font-weight: 300;
+		font-family: var(--fuente-texto);
+		font-weight: normal;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 1.6;
 	}
 
 	a {
@@ -193,7 +200,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--fuente-titulos);
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2090,7 +2097,7 @@ input, select, textarea {
 		border-radius: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--fuente-titulos);
 		font-size: 0.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -2325,7 +2332,7 @@ input, select, textarea {
 
 	label {
 		display: block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--fuente-titulos);
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2419,7 +2426,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1rem;
 			letter-spacing: 0;
-			font-family: "Merriweather", Georgia, serif;
+			font-family: var(--fuente-texto);
 			text-transform: none;
 			font-weight: 300;
 			padding-left: 2.8rem;
@@ -2980,7 +2987,7 @@ input, select, textarea {
 					display: block;
 					position: absolute;
 					top: 50%;
-					width: calc(50% - 6rem);
+					width: calc(50% - 8rem);
 					border-top: solid 2px;
 				}
 
@@ -3009,7 +3016,7 @@ input, select, textarea {
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: var(--color-borde);
+		border-top-color: var(--color-secundario);
 	}
 
 /* Table */
@@ -3035,7 +3042,7 @@ input, select, textarea {
 		}
 
 		table th {
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: var(--fuente-titulos);
 			font-size: 0.8rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
@@ -3135,7 +3142,7 @@ input, select, textarea {
 			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 			border: solid 2px;
 			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: var(--fuente-titulos);
 			font-size: 0.8rem;
 			font-weight: 900;
 			height: 3rem;
@@ -3245,8 +3252,8 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: var(--color-primario);
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-color: var(--color-fondo);
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(28, 26, 51, 0.55), rgba(28, 26, 51, 0.55)), url("../../images/guayarte-cultura-escenario.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3578,7 +3585,7 @@ input, select, textarea {
 			border-style: solid;
 			border-color: #ffffff;
 			border-width: 5px !important;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: var(--fuente-titulos);
 			font-size: 2.25rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
@@ -3703,7 +3710,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: var(--fuente-titulos);
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			list-style: none;
@@ -3734,7 +3741,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: var(--color-superficie);
+					background-color: var(--color-secundario);
 				}
 
 					#nav ul.links li.active a {
@@ -4269,7 +4276,7 @@ input, select, textarea {
 						-webkit-flex-grow: 0;
 						-ms-flex-grow: 0;
 						flex-grow: 0;
-						width: 6rem;
+						width: 8.5rem;
 					}
 
 					#footer > section.split.contact > section > :last-child {
@@ -4399,7 +4406,7 @@ input, select, textarea {
 		position: relative;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--fuente-titulos);
 		font-size: 0.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -4509,7 +4516,7 @@ input, select, textarea {
 		right: 0.75rem;
 		border: 0;
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: var(--fuente-titulos);
 		font-size: 0.9rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
@@ -4601,7 +4608,7 @@ input, select, textarea {
 				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
-					font-family: "Source Sans Pro", Helvetica, sans-serif;
+					font-family: var(--fuente-titulos);
 					font-size: 0.9rem;
 					font-size: 0.9rem;
 					font-weight: 900;
@@ -4696,6 +4703,51 @@ input, select, textarea {
 			transform: translateX(0);
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
+		}
+
+	}
+
+/* Personalización Plaza Guayarte */
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: var(--radio);
+	}
+
+	.item {
+		padding: var(--espacio-medio) var(--espacio-grande);
+		margin-bottom: var(--espacio-grande);
+		background-color: var(--color-fondo-claro);
+		border-radius: var(--radio);
+	}
+
+	.item p, .item ul {
+		margin-bottom: var(--espacio-medio);
+	}
+
+	.meta {
+		color: var(--color-texto-suave);
+		font-size: 0.9rem;
+	}
+
+	input:focus, select:focus, textarea:focus {
+		box-shadow: 0 0 0 3px rgba(214, 36, 110, 0.25);
+	}
+
+	#nav a:focus-visible, button:focus-visible {
+		outline: 3px solid var(--color-acento);
+		outline-offset: 2px;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		p {
+			text-align: left;
+		}
+
+		.item {
+			padding: var(--espacio-medio);
 		}
 
 	}
