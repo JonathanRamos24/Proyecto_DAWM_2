@@ -242,12 +242,13 @@ El control de versiones, el código fuente y la documentación del proyecto se g
 
 | Elemento verificado | Resultado |
 | :--- | :--- |
-| Carga de la página principal | Pendiente |
-| Hojas de estilo (`main.css`, íconos) | Pendiente |
-| Imágenes de la plaza y fondo | Pendiente |
-| Enlaces del menú a cada sección | Pendiente |
-| Enlaces al repositorio y al reporte PDF | Pendiente |
-| Visualización en dispositivos móviles | Pendiente |
+| Carga de la página principal | Correcto: la URL pública responde con código 200 y muestra la versión final de la rama `main`. |
+| Hojas de estilo (`main.css`, `noscript.css`, íconos) | Correcto: los archivos CSS y las fuentes de íconos responden con código 200; se aplican la paleta, las tipografías y los espaciados. |
+| Scripts de la plantilla (`assets/js/`) | Correcto: los siete archivos JavaScript responden con código 200 (desplazamiento suave, menú móvil y efecto *parallax*). |
+| Imágenes de la plaza y fondo | Correcto: las cinco fotografías y la textura `overlay.png` responden con código 200 y se visualizan, incluida la fotografía de fondo de la portada. |
+| Enlaces del menú a cada sección | Correcto: los cinco enlaces internos tienen su sección de destino (`actividad`, `experiencia`, `voces`, `buzon`, `contacto`). |
+| Enlaces al repositorio y al reporte PDF | Correcto: ambos enlaces responden con código 200. |
+| Visualización en dispositivos móviles | Correcto: con un ancho de 375 px, el contenido se presenta en una sola columna, sin desbordamientos, y el menú se reemplaza por el botón "Menu". |
 
 ---
 
