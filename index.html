@@ -175,48 +175,67 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
+						<section id="buzon">
+							<h2>Buzón ciudadano</h2>
+							<p>Propuestas recopiladas en las entrevistas:</p>
+							<ul>
+								<li>Zonas con carpas o techos corredizos para protegerse de la lluvia.</li>
+								<li>Eventos nocturnos para parejas y amigos, como cine al aire libre y conciertos acústicos.</li>
+								<li>Ferias de libros y espacios para demostrar habilidades y talentos.</li>
+							</ul>
+							<p>¿Visitas la plaza? Déjanos tu opinión o propuesta para mejorar este espacio público.</p>
+							<form method="get" class="formulario">
 								<div class="fields">
 									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<label for="nombre">Nombre o seudónimo (opcional)</label>
+										<input type="text" id="nombre" name="nombre" />
 									</div>
 									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<label for="perfil">Perfil</label>
+										<select id="perfil" name="perfil">
+											<option value="visitante">Visitante o comensal</option>
+											<option value="emprendedor">Emprendedor gastronómico</option>
+											<option value="artista">Artista o expositor</option>
+											<option value="otro">Otro</option>
+										</select>
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<label for="mensaje">Mensaje para la plaza</label>
+										<textarea id="mensaje" name="mensaje" rows="4" minlength="10" required></textarea>
+									</div>
+									<div class="field">
+										<input type="checkbox" id="acepto" name="acepto" required />
+										<label for="acepto">Acepto que mi opinión se use con fines académicos</label>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><button type="submit">Enviar propuesta</button></li>
 								</ul>
 							</form>
 						</section>
-						<section class="split contact">
+						<section class="split contact" id="contacto">
 							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<h3>Dirección</h3>
+								<p>Plaza Guayarte<br />
+								Av. Carlos Julio Arosemena<br />
+								Guayaquil, Ecuador</p>
 							</section>
 							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<h3>Nota ética</h3>
+								<p>Proyecto de uso exclusivamente académico. Las entrevistas se realizaron con consentimiento informado y los testimonios se presentan de forma anónima para proteger los datos personales.</p>
 							</section>
 							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<h3>Equipo investigador</h3>
+								<p>Pablo Naranjo y Jonathan Ramos<br />
+								Grupo 16 · ESPOL<br />
+								Desarrollo de Aplicaciones Web y Móviles</p>
 							</section>
 							<section>
-								<h3>Social</h3>
+								<h3>Enlaces</h3>
+								<p><a href="https://github.com/JonathanRamos24/Proyecto_DAWM_2">Repositorio en GitHub</a><br />
+								<a href="docs/Reporte%20Proyecto%2002%20G16.pdf">Reporte del proyecto (PDF)</a></p>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/JonathanRamos24/Proyecto_DAWM_2" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -224,7 +243,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; <time datetime="2026">2026</time> Grupo 16 · ESPOL</li><li>Diseño: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
